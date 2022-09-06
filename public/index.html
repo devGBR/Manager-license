@@ -5,13 +5,121 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+    
     <title><%= htmlWebpackPlugin.options.title %></title>
   </head>
   <body>
-    <noscript>
-      <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
-    </noscript>
-    <div id="app"></div>
-    <!-- built files will be auto injected -->
+    <div id="app">
+    </div>
+    <br>
+    <div class = "container">
+      <div class="buscar">
+          <div class="busca">
+      <h2>Insira sua placa</h2>
+      <form  class = "form-inline" action="" method="post">
+          
+          <input class="tm w-25" type="text" >
+        <button type="submit" class="btn btn-primary mb-2">buscar</button>
+  
+      </form>
+      </div>
+      </div>
+      <br>
+  <div class="row justify-content-center">
+          <div class="col-md-8">
+              <div class="card">
+                  <div class="card-header"><H2 style = "font-weight: bold;">Licença Taxi</H2></div>
+                  <div class = "card-body">
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th scope="col">Nome</th>
+        <th scope="col">Veiculo</th>
+        <th scope="col">Placa</th>
+        <th scope="col">Licença</th>
+        <th scope="col">validade</th>
+  
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Cleiton Hayashi</td>
+        <td>Honda CG 160</td>
+        <td>QLS5322</td>
+        <td class = "pagamentos">Paga</td>
+        <td> 05/09 a 10/10 </td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
   </body>
 </html>
+
+<style>
+.cimg{
+    margin-left: 80px;
+    width: 120px;
+    height: 60px;
+}
+.bg-green{
+    background-color: green;
+}
+.tm{
+    
+  padding: 0.375rem 0.75rem;
+  font-size: 0.9rem;
+  font-weight: 400;
+  line-height: 1.6;
+  color: #212529;
+  height: 40px;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border-radius: 0.375rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    width: 600px;
+}
+.form-inline{
+    display: flex;
+    gap: 1%;
+}
+
+.busca{
+    width: 700px;
+}
+.pagamentos{
+    --bs-table-color: #000;
+    --bs-table-bg: #5af562;
+    --bs-table-border-color: #c5dfc2;
+    --bs-table-striped-bg: #cceccc;
+    --bs-table-striped-color: #000;
+    --bs-table-active-bg: #c5dfc2;
+    --bs-table-active-color: #000;
+    --bs-table-hover-bg: #68b37b;
+    --bs-table-hover-color: #000;
+    color: var(--bs-table-color);
+    border-color: var(--bs-table-border-color);
+}
+h2{
+    font-weight: bolder;
+}
+.buscar{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.position{
+    display: flex;
+    justify-content: right;
+    margin-right: 30px;
+    font-weight: 700;
+}
+</style>
